@@ -1,0 +1,35 @@
+{
+  "name": "washington-hikes-api",
+  "version": "1.0.0",
+  "description": "A simple API for Washington hikes!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js",
+    "migrate":"node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:latest --knexfile db/knexfile.js",
+    "rollback": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:rollback --knexfile db/knexfile.js",
+    "seed": "node -r dotenv/config ./node_modules/knex/bin/cli.js seed:run --knexfile db/knexfile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshiohasegawa/washington-hikes-api.git"
+  },
+  "author": "yoshiohasegawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshiohasegawa/washington-hikes-api/issues"
+  },
+  "homepage": "https://github.com/yoshiohasegawa/washington-hikes-api#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.4",
+    "mocha": "^8.3.2",
+    "pg": "^8.6.0",
+    "postgres": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
