@@ -1,10 +1,29 @@
 const hikesDAO = require('../dao/hikes');
 
 class HikesService {
-    getHikes(hikeReqBody) {
-        // const { id, name } = hikeReqBody;
-        const hikes = hikesDAO.getHikes()
+    getHikes(req) {
+        const { id } = req.params;
+        if (id) {
+            const hike = hikesDAO.getHikes(id);
+            return hike;
+        }
+        const hikes = hikesDAO.getHikes();
         return hikes;
+    };
+
+    postHikes(req) {
+        const newHike = req.body;
+        const id = hikesDAO.postHikes(newHike);
+        return id;
+    };
+
+    deleteHikes(req) {
+        const { id } = req.params;
+        if (id) {
+            hikesDAO.deleteHikes(id);
+            return true;
+        }
+        return;
     }
 }
 

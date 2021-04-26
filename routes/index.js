@@ -1,7 +1,12 @@
 const express = require('express');
 const hikesRouter = require("./hikes.js");
 
-const router = express.Router();
-router.use('/washingtonhikes/api/hikes', hikesRouter)
+const setupServer = () => {
+  const server = express();
 
-module.exports = router;
+  server.use('/washingtonhikes/api/hikes', hikesRouter)
+
+  return server;
+};
+
+module.exports = { setupServer };
