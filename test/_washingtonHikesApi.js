@@ -40,4 +40,22 @@ describe('Washington Hikes API Server', () => {
             resDel.should.have.status(200);
         });
     });
+
+    describe('PUT /washingtonhikes/api/hikes', () => {
+        it('should be able to update a hike', async () => {
+            const myHike = { title: 'My Awesome Secret Hike' };
+            const resId = await chai.request(server).post('/washingtonhikes/api/hikes').send(myHike);
+            const id = resId.text;
+
+            const resPut = await chai.request(server).put(`/washingtonhikes/api/hikes/${id}`).send(
+                {title: 'My Awesome not-so-secret Hike' });
+            resPut.should.have.status(200);
+            
+            const resHike = await chai.request(server).get(`/washingtonhikes/api/hikes/${id}`);
+            JSON.parse(resHike.text).title.should.equal('My Awesome not-so-secret Hike');
+
+            const resDel = await chai.request(server).delete(`/washingtonhikes/api/hikes/${id}`);
+            resDel.should.have.status(200);
+        });
+    });
 });

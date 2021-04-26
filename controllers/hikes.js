@@ -32,7 +32,20 @@ class HikesController {
             console.error(err);
             res.status(500).end();
         }
-    }
+    };
+
+    async putHikes(req, res) {
+        try {
+            const putRes = await hikesService.putHikes(req);
+            if (putRes) {
+                res.status(200).end();
+            }
+            res.status(404).end();
+        } catch (err) {
+            console.error(err);
+            res.status(500).end();
+        }
+    };
 }
 
 module.exports = new HikesController();

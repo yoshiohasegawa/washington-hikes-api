@@ -16,4 +16,7 @@ router.post('/', hikesController.postHikes);
 // DELETE
 router.delete('/:id', hikesController.deleteHikes);
 
+// PUT
+router.put('/:id', hikesController.putHikes);
+
 module.exports = router;

@@ -24,7 +24,17 @@ class HikesService {
             return true;
         }
         return;
-    }
+    };
+
+    putHikes(req) {
+        const { id } = req.params;
+        const changes = req.body;
+        if (id) {
+            hikesDAO.putHikes(id, changes);
+            return true;
+        }
+        return;
+    };
 }
 
 module.exports = new HikesService();
