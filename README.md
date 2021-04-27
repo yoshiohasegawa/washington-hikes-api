@@ -3,14 +3,13 @@
 
 ## Description
 > This is a project folder for a Washington Hikes API.
-> This API handles basic REST request routes including GET, POST, DELETE and PUT.
-> The server is written using the Express.js framwork.
+> This API handles REST request routes including GET, POST, DELETE and PUT.
+> The server is written using the Node and Express.js framework.
 > This project uses Postgres for storing data and, 
 > Knex.js for communicating with the database.
-> The one and only endpoint for this API is */washingtonhikes/api/hikes*.
 > In addition to the backend server that manages API routes, the project includes middleware
 > to serve static files to the front-end. The front-end is bundled using Webpack and, 
-> provides a simple interface for the user to interact with the API, via a GET request.
+> provides a simple interface for the user to interact with the API.
 
 
 ## Information About the Data
@@ -65,20 +64,20 @@ Currently, this project only contains Hike data which we can represent as Hike o
 
 ### Hikes
 ```GET /washingtonhikes/api/hikes```
-- > Returns an Array of all Hike objects.
+- Returns an Array of all Hike objects.
 
 ```GET /washingtonhikes/api/hikes/:idOrName```
-- > `idOrName`: either the **uuid** or **name** of the Hike desired.  
+- `idOrName`: either the **uuid** or **name** of the Hike desired.  
 
 ```POST /washingtonhikes/api/hikes```
-- > Request body must contain an object with **title** at a minimum.
+- Request body must contain an object with **title** at a minimum.
 
 ```DELETE /washingtonhikes/api/hikes/:id```
-- > id: **id** of the Hike to be deleted.
+- id: **id** of the Hike to be deleted.
 
 ```PUT /washingtonhikes/api/hikes/:id```
-- > id: **id** of the Hike to be updated.  
-- > Request body must contain valid properties and values for updating.  
+- id: **id** of the Hike to be updated.  
+- Request body must contain valid properties and values for updating.  
 
 ### Example Hike Object
 ```js
