@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/yoshiohasegawa/washington-hikes-api#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.95.4",
@@ -36,6 +37,8 @@
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0"
+    "pretty-quick": "^3.1.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
   }
 }

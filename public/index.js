@@ -1,7 +1,10 @@
+import axios from 'axios';
+
 async function getHikeData() {
     const data = await axios.get('/washingtonhikes/api/hikes');
     return data;
 }
+
 
 async function App() {
     res = await getHikeData()
