@@ -67,16 +67,16 @@ Currently, this project only contains Hike data which we can represent as Hike o
 - Returns an Array of all Hike objects.
 
 ```GET /washingtonhikes/api/hikes/:idOrName```
-- `idOrName`: either the **uuid** or **name** of the Hike desired.  
+- Provide either the **uuid** or **name** of the Hike desired.  
 
 ```POST /washingtonhikes/api/hikes```
-- Request body must contain an object with **title** at a minimum.
+- Request body must contain an object with a property **title** at a minimum.
 
 ```DELETE /washingtonhikes/api/hikes/:id```
-- `id`: **id** of the Hike to be deleted.
+- Provide the **id** of the Hike to be deleted.
 
 ```PUT /washingtonhikes/api/hikes/:id```
-- `id`: **id** of the Hike to be updated.  
+- Provide the **id** of the Hike to be updated.  
 - Request body must contain valid properties and values for updating.  
 
 ### Example Hike Object
