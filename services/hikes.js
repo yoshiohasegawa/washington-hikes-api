@@ -2,9 +2,9 @@ const hikesDAO = require('../dao/hikes');
 
 class HikesService {
     getHikes(req) {
-        const { id } = req.params;
-        if (id) {
-            const hike = hikesDAO.getHikes(id);
+        const { idOrName } = req.params;
+        if (idOrName) {
+            const hike = hikesDAO.getHikes(idOrName);
             return hike;
         }
         const hikes = hikesDAO.getHikes();

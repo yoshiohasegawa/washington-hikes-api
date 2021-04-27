@@ -8,7 +8,7 @@ router.use(express.json());
 
 // GET
 router.get('/', hikesController.getHikes);
-router.get('/:id', hikesController.getHikes);
+router.get('/:idOrName', hikesController.getHikes);
 
 // POST
 router.post('/', hikesController.postHikes);
