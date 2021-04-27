@@ -48,11 +48,11 @@ export default function PutHikes() {
         <>
             <div>
                 <h2>PUT</h2>
-                <p>Body: {"{"}<b>title:</b> {hikeTitle}<b>,</b> <b>region:</b> {hikeRegion}{"}"}</p>
                 <form>
                     <label htmlFor="put-hikes-id">/washingtonhikes/api/hikes/</label>
                     <input type="text" id="put-hikes-id" ref={hikeIdInput} placeholder="Hike ID" onChange={updateHikeId}></input>
-                    <label htmlFor="put-hikes-title"><br/><br />Title: </label>
+                    <p>Body: {"{"}<b>title:</b> {hikeTitle}<b>,</b> <b>region:</b> {hikeRegion}{"}"}</p>
+                    <label htmlFor="put-hikes-title">Title: </label>
                     <input type="text" id="put-hikes-title" ref={hikeTitleInput} placeholder="Title" onChange={updateHikeTitle}></input>
                     <label htmlFor="put-hikes-region">Region: </label>
                     <input type="text" id="put-hikes-region" ref={hikeRegionInput} placeholder="Region" onChange={updateHikeRegion}></input>
