@@ -4,11 +4,13 @@
   "description": "A simple API for Washington hikes!",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config index.js",
     "migrate": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:latest --knexfile db/knexfile.js",
     "rollback": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:rollback --knexfile db/knexfile.js",
     "seed": "node -r dotenv/config ./node_modules/knex/bin/cli.js seed:run --knexfile db/knexfile.js",
-    "test": "mocha --insepect -r dotenv/config --exit"
+    "test": "mocha --insepect -r dotenv/config --exit",
+    "build": "webpack",
+    "serve": "nodemon -r dotenv/config index.js",
+    "dev": "webpack --watch --progress"
   },
   "repository": {
     "type": "git",
@@ -31,13 +33,27 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "concurrently": "^6.0.2",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "install": "^0.13.0",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",
+    "npm": "^7.11.1",
+    "path": "^0.12.7",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0"
   }
