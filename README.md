@@ -73,10 +73,10 @@ Currently, this project only contains Hike data which we can represent as Hike o
 - Request body must contain an object with **title** at a minimum.
 
 ```DELETE /washingtonhikes/api/hikes/:id```
-- id: **id** of the Hike to be deleted.
+- `id`: **id** of the Hike to be deleted.
 
 ```PUT /washingtonhikes/api/hikes/:id```
-- id: **id** of the Hike to be updated.  
+- `id`: **id** of the Hike to be updated.  
 - Request body must contain valid properties and values for updating.  
 
 ### Example Hike Object
