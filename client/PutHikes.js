@@ -33,6 +33,8 @@ export default function PutHikes() {
             hikeIdInput.current.value = '';
             hikeTitleInput.current.value = '';
             hikeRegionInput.current.value = '';
+            setHikeTitle('');
+            setHikeRegion('');
         } catch (err) {
             console.error('Please check your inputs again');
         }
