@@ -97,7 +97,8 @@ Currently, this project only contains Hike data which we can represent as Hike o
     "report_date":"2021-04-21T15:00:00.000Z",
     "report_count":1118,
     "url":"https://www.wta.org/go-hiking/hikes/mailbox-peak"
-    "created_at":"2021-04-26T09:49:33.943Z","updated_at":"2021-04-26T09:49:33.943Z"
+    "created_at":"2021-04-26T09:49:33.943Z",
+    "updated_at":"2021-04-26T09:49:33.943Z"
 }
 ```
 ___
