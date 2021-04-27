@@ -102,9 +102,10 @@ Currently, this project only contains Hike data which we can represent as Hike o
 ```
 ___
 ## Front-End Interface
-Apologies in advance for it being very bland 😅. The front-end allows for the user to simply test a `GET` request. Enter an **id** or **name** into the text input field and click *Submit*. You should see some information displayed about the hike you requested.
+Apologies in advance for it being very bland 😅. The front-end allows for the user to simply test `GET`, `POST`, `DELETE`, and `PUT` requests sent to the back-end API.  
+- **_Warning: This will alter your database!_**
 
-![Washington Hikes API User Interface](imgs/WashingtonHikesApiUI.png)
+![Washington Hikes API User Interface](img/WashingtonhikesApiUI.png)
 ___
 ## Contributors
 * Yoshio Hasegawa
