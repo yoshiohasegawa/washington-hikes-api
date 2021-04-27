@@ -1,12 +1,12 @@
 import React from 'react';
+import GetHikes from './GetHikes';
 
-function App() {
+export default function App() {
 
     return (
         <>
-            <h1>World!</h1>
+            <h1>Washington State Hikes API</h1>
+            <GetHikes />
         </>
         )
     }
-
-    export default App;
