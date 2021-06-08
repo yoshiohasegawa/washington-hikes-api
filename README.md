@@ -13,7 +13,7 @@
 
 
 ## Information About the Data
-To see where this data is coming from please see the [wta-web-scraper](https://github.com/yoshiohasegawa/wta-scraper) I built to support this API. More specifically, the database in this project is initially seeded with data that was extracted using this web scraper. To view the Washington hike data used for this project, visit [WTA's Hiking Guide](https://www.wta.org/go-outside/hikes).
+To see where this data is coming from please see the [wta-web-scraper](https://github.com/yoshiohasegawa/wta-scraper) I built to support this API. More specifically, the database in this project is initially seeded with data that was extracted using this web scraper. To view the Washington hike data used for this project, visit [WTA's Hiking Guide](https://www.wta.org/go-outside/hikes). Finally, to interact with a visualization representing this data please see the [Tableau Dashboard](https://public.tableau.com/app/profile/yoshio.hasegawa/viz/WTA_Hike_Dash/WashingtonStateHikes) I created for this project.
 
 ___
 ## Getting Started
